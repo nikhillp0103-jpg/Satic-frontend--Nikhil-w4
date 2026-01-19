@@ -3,89 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE EMPIRE | Car Info</title>
+  <title>TechVision Solutions</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="navbar">
-    <div class="logo">THE EMPIRE</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Cars</a></li>
-        <li><a href="#">Brands</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <button class="nav-btn">Explore</button>
-  </header>
+<header>
+  <div class="logo">TechVision</div>
+  <button id="menuBtn" class="menu-btn">☰</button>
+  <nav class="desktop-nav">
+    <a href="#services">Services</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#about">About</a>
+    <button class="primary-btn">Contact</button>
+  </nav>
+</header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Premium Car Information Hub</h1>
-      <p>Placeholder text describing THE EMPIRE automobile information platform. Replace with real content later.</p>
-    </div>
-    <div class="hero-img">
-      <div class="img-placeholder">Car Image Placeholder</div>
-    </div>
-  </section>
+<!-- SIDEBAR MOBILE -->
+<aside id="sidebar" class="sidebar">
+  <button id="closeSidebar" class="close-btn">✖</button>
+  <a href="#services">Services</a>
+  <a href="#solutions">Solutions</a>
+  <a href="#about">About</a>
+  <button class="primary-btn">Contact</button>
+</aside>
 
-  <!-- CONTENT SECTION 1 -->
-  <section class="section">
-    <h2>About THE EMPIRE</h2>
-    <p>Placeholder description about the company. This section will later explain what THE EMPIRE provides for car enthusiasts.</p>
-  </section>
+<section class="hero">
+  <h1>Transforming Ideas Into Scalable Technology</h1>
+  <p>We build secure, modern, and future-ready digital solutions for teams & businesses.</p>
+  <button class="primary-btn">Get Started</button>
+</section>
 
-  <!-- CONTENT SECTION 2 (CAR CARDS) -->
-  <section class="cards-section">
-    <div class="card">
-      <div class="img-placeholder small"></div>
-      <h3>Car Model Name</h3>
-      <p>Placeholder specs and details.</p>
-    </div>
-    <div class="card">
-      <div class="img-placeholder small"></div>
-      <h3>Car Model Name</h3>
-      <p>Placeholder specs and details.</p>
-    </div>
-    <div class="card">
-      <div class="img-placeholder small"></div>
-      <h3>Car Model Name</h3>
-      <p>Placeholder specs and details.</p>
-    </div>
-  </section>
+<section id="services" class="cards">
+  <div class="card">
+    <h3>Web Development</h3>
+    <p>Create responsive, scalable and modern web apps.</p>
+    <button class="secondary-btn">Explore</button>
+  </div>
+  <div class="card">
+    <h3>Cloud Solutions</h3>
+    <p>Secure and optimized cloud infrastructures for enterprises.</p>
+    <button class="secondary-btn">Explore</button>
+  </div>
+  <div class="card">
+    <h3>AI Integration</h3>
+    <p>Leverage machine intelligence to automate business.</p>
+    <button class="secondary-btn">Explore</button>
+  </div>
+</section>
 
-  <!-- CONTENT SECTION 3 -->
-  <section class="section">
-    <h2>Brands We Cover</h2>
-    <p>Placeholder text listing car brands that will be shown later.</p>
-  </section>
+<footer>
+  © 2026 TechVision Solutions — All Rights Reserved
+</footer>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© THE EMPIRE — Automobile Information Platform</p>
-  </footer>
-
-
-  <div id="webModal" class="modal" onclick="closeModal('webModal')">
-  <div class="modal-content">Web Development details placeholder.</div>
-</div>
-
-<div id="mobileModal" class="modal" onclick="closeModal('mobileModal')">
-  <div class="modal-content">Mobile App details placeholder.</div>
-</div>
-
-<div id="designModal" class="modal" onclick="closeModal('designModal')">
-  <div class="modal-content">Design details placeholder.</div>
-</div>
-
-<div id="consultModal" class="modal" onclick="closeModal('consultModal')">
-  <div class="modal-content">Consult with THE EMPIRE placeholder.</div>
-</div>
-  
-
+<script src="script.js"></script>
 </body>
 </html>
