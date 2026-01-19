@@ -1,13 +1,11 @@
-// mobile menu toggle
-document.getElementById("menuBtn").onclick = () => {
-  document.getElementById("navLinks").classList.toggle("active");
+const sidebar = document.getElementById("sidebar");
+const menuBtn = document.getElementById("menuBtn");
+const closeSidebar = document.getElementById("closeSidebar");
+
+menuBtn.onclick = () => {
+  sidebar.classList.add("open");
 };
 
-// modal handling
-function openModal(id) {
-  document.getElementById(id).style.display = "flex";
-}
-
-function closeModal(id) {
-  document.getElementById(id).style.display = "none";
-}
+closeSidebar.onclick = () => {
+  sidebar.classList.remove("open");
+};
