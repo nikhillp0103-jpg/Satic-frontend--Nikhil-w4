@@ -1,63 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Static Site – Rebuild</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intern Platform | 2026 Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar container">
-      <div class="logo">LOGO</div>
-      <button class="nav-toggle" aria-label="open navigation">
-        ☰
-      </button>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#" class="btn-nav">Sign Up</a></li>
-      </ul>
-    </nav>
+  <!-- NAVBAR (Glassmorphism + Perfect Mobile Menu) -->
+  <nav class="navbar glassmorphism">
+    <div class="logo">
+      <span class="logo-gradient">Intern</span>Platform
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#careers">Careers</a></li>
+      <li><a href="#" class="btn-trending">Get Started</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-    <section class="hero container">
-      <div class="hero-content">
-        <p class="hero-tag">Placeholder Tagline</p>
-        <h1>Build Your Future With Practical Experience</h1>
-        <p class="hero-subtitle">
-          Use this space for dummy text that explains the main value of your platform.
-          Keep it 2–3 lines for balance.
-        </p>
-        <div class="hero-actions">
-          <a href="#" class="btn-primary">Get Started</a>
-          <a href="#" class="btn-secondary">Learn More</a>
-        </div>
-        <p class="hero-note">
-          *All content here is placeholder and for layout only.
-        </p>
+  <!-- HERO - BENTO GRID LAYOUT (2026 TREND) -->
+  <section class="hero">
+    <div class="hero-bento">
+      <!-- Bento Box 1: Main Headline -->
+      <div class="bento-main">
+        <span class="badge-trending">Trusted by 5K+</span>
+        <h1 class="kinetic-title" data-splitting>
+          Real World 
+          <br><span class="gradient-bold">Experience</span>
+        </h1>
+        <p class="hero-lead">Build portfolio projects hiring managers love</p>
       </div>
 
-      <div class="hero-graphic">
-        <!-- Use a simple box / illustration placeholder instead of real images -->
-        <div class="hero-card">
-          <div class="hero-icon"></div>
-          <h3>Real Work, Real Skills</h3>
-          <p>Short dummy description for visual balance in the hero section.</p>
+      <!-- Bento Box 2: Stats Grid -->
+      <div class="bento-stats">
+        <div class="stat-card animate-on-scroll" data-count="12">
+          <div class="stat-number">0</div>
+          <div>More Interviews</div>
+        </div>
+        <div class="stat-card animate-on-scroll" data-count="2">
+          <div class="stat-number">0</div>
+          <div>Faster Hires</div>
+        </div>
+        <div class="stat-card animate-on-scroll" data-count="95">
+          <div class="stat-number">0</div>
+          <div>Success Rate</div>
         </div>
       </div>
+
+      <!-- Bento Box 3: CTA Buttons -->
+      <div class="bento-cta">
+        <a href="#" class="btn-primary-3d">
+          <span>Start Free Trial</span>
+          <svg class="arrow-3d" viewBox="0 0 24 24">
+            <path d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#" class="btn-glass">Watch Demo →</a>
+      </div>
+
+      <!-- Bento Box 4: Phone Mockup -->
+      <div class="bento-phone">
+        <div class="phone-2026">
+          <div class="phone-screen">
+            <div class="skill-stack">
+              <div class="skill-item">💻 Frontend</div>
+              <div class="skill-item">🎯 Interviews +12%</div>
+              <div class="skill-item">👥 Team Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder sections -->
+  <main class="container">
+    <section id="features" class="features-placeholder">
+      <h2>Day 13+ Features Coming...</h2>
     </section>
-  </header>
-
-  <main>
-    <!-- keep your other sections / placeholders from Day 11 here -->
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer-glass glassmorphism">
     <div class="container">
-      <p>© 2026 Placeholder Company. All rights reserved.</p>
+      © 2026 Intern Platform | Satic Internship
     </div>
   </footer>
+
+  <!-- EXTERNAL JS LINK -->
+  <script src="script.js" defer></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intern Platform | 2026 Design</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR (Glassmorphism + Perfect Mobile Menu) -->
+  <nav class="navbar glassmorphism">
+    <div class="logo">
+      <span class="logo-gradient">Intern</span>Platform
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#careers">Careers</a></li>
+      <li><a href="#" class="btn-trending">Get Started</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- HERO - BENTO GRID LAYOUT (2026 TREND) -->
+  <section class="hero">
+    <div class="hero-bento">
+      <!-- Bento Box 1: Main Headline -->
+      <div class="bento-main">
+        <span class="badge-trending">Trusted by 5K+</span>
+        <h1 class="kinetic-title" data-splitting>
+          Real World 
+          <br><span class="gradient-bold">Experience</span>
+        </h1>
+        <p class="hero-lead">Build portfolio projects hiring managers love</p>
+      </div>
+
+      <!-- Bento Box 2: Stats Grid -->
+      <div class="bento-stats">
+        <div class="stat-card animate-on-scroll" data-count="12">
+          <div class="stat-number">0</div>
+          <div>More Interviews</div>
+        </div>
+        <div class="stat-card animate-on-scroll" data-count="2">
+          <div class="stat-number">0</div>
+          <div>Faster Hires</div>
+        </div>
+        <div class="stat-card animate-on-scroll" data-count="95">
+          <div class="stat-number">0</div>
+          <div>Success Rate</div>
+        </div>
+      </div>
+
+      <!-- Bento Box 3: CTA Buttons -->
+      <div class="bento-cta">
+        <a href="#" class="btn-primary-3d">
+          <span>Start Free Trial</span>
+          <svg class="arrow-3d" viewBox="0 0 24 24">
+            <path d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#" class="btn-glass">Watch Demo →</a>
+      </div>
+
+      <!-- Bento Box 4: Phone Mockup -->
+      <div class="bento-phone">
+        <div class="phone-2026">
+          <div class="phone-screen">
+            <div class="skill-stack">
+              <div class="skill-item">💻 Frontend</div>
+              <div class="skill-item">🎯 Interviews +12%</div>
+              <div class="skill-item">👥 Team Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder sections -->
+  <main class="container">
+    <section id="features" class="features-placeholder">
+      <h2>Day 13+ Features Coming...</h2>
+    </section>
+  </main>
+
+  <footer class="footer-glass glassmorphism">
+    <div class="container">
+      © 2026 Intern Platform | Satic Internship
+    </div>
+  </footer>
+
+  <!-- EXTERNAL JS LINK -->
+  <script src="script.js" defer></script>
 </body>
 </html>
