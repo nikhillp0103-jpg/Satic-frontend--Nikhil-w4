@@ -3,71 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Placeholder Website</title>
+  <title>THE EMPIRE</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="navbar">
-    <div class="logo">THE EMPIRE</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Placeholder Logo</div>
+
+    <nav class="desktop-nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#" class="primary-btn">Contact</a>
     </nav>
-    <button class="nav-btn">Button</button>
+
+    <button id="menuBtn" class="menu-btn">☰</button>
   </header>
+
+  <!-- MOBILE SIDEBAR -->
+  <aside id="sidebar" class="sidebar">
+    <button id="closeSidebar" class="close-btn">✕</button>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#" class="primary-btn">Contact</a>
+  </aside>
 
   <!-- HERO SECTION -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>Placeholder Hero Title</h1>
-      <p>Placeholder text for hero description. Replace later with actual content.</p>
-    </div>
-    <div class="hero-img">
-      <div class="img-placeholder">Image Placeholder</div>
-    </div>
-  </section>
-
-  <!-- CONTENT SECTION 1 -->
-  <section class="section">
-    <h2>Section Title 1</h2>
-    <p>Placeholder content for section one. This is only structural text.</p>
-  </section>
-
-  <!-- CONTENT SECTION 2 (3 CARDS EXAMPLE) -->
-  <section class="cards-section">
-    <div class="card">
-      <div class="img-placeholder small"></div>
-      <h3>Card Title</h3>
-      <p>Placeholder card text.</p>
-    </div>
-    <div class="card">
-      <div class="img-placeholder small"></div>
-      <h3>Card Title</h3>
-      <p>Placeholder card text.</p>
-    </div>
-    <div class="card">
-      <div class="img-placeholder small"></div>
-      <h3>Card Title</h3>
-      <p>Placeholder card text.</p>
-    </div>
-  </section>
-
-  <!-- CONTENT SECTION 3 -->
-  <section class="section">
-    <h2>Section Title 2</h2>
-    <p>More placeholder content for layout demonstration.</p>
+    <h1>Placeholder Hero Title</h1>
+    <p>Placeholder text for hero description. Replace later with actual content.</p>
+    <button class="primary-btn">Get Started</button>
+    <div class="image-placeholder">Image Placeholder</div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© THE EMPEROR</p>
+    © Placeholder Footer Text
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
