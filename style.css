@@ -74,27 +74,48 @@ body {
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
-
+/* ===== MOBILE NAV (default hidden) ===== */
 .nav-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;   /* start hidden off-screen */
+  width: 250px;
+  height: 100vh;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 80px 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.nav-menu .nav-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* ===== WHEN ACTIVE (slide in) ===== */
+.nav-menu.active {
+  right: 0;        /* sliding visible */
+}
+
+/* Hide menu desktop */
+@media (min-width: 769px) {
+  .nav-menu {
+    position: static;
+    height: auto;
+    width: auto;
     display: flex;
-    list-style: none;
-    gap: 20px;
-    align-items: center;
+    flex-direction: row;
+    background: none;
+    padding: 0;
+    gap: 30px;
+    right: unset;
+  }
 }
 
-.nav-link {
-    text-decoration: none;
-    color: #424242;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    display: block;
-}
-
-.nav-link:hover {
-    color: #1976d2;
-    transform: translateY(-2px);
-}
 
 /* Hero */
 .hero {
