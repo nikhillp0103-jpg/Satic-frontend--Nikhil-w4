@@ -1,86 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>STATIC PROJECT — Day 14</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Services — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">
-  <div class="container header-flex">
-    <div class="logo"><h1>ProjectName</h1></div>
-    <button id="hamburger" class="hamburger">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+  <div class="container nav-container">
+    <h1 class="logo">THE EMPIRE</h1>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <section id="home" class="hero">
   <div class="container">
-    <h1>Welcome to Placeholder Agency</h1>
-    <p>Leading digital solutions with modern design.</p>
+    <h2>Empowering Business Through Digital Solutions</h2>
+    <p>We help companies grow with modern technology, strategy & design.</p>
+    <a href="#contact" class="btn">Get Started</a>
   </div>
 </section>
 
-<section id="about" class="section">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>We are a forward-thinking team creating modern web experiences.</p>
+<section id="about" class="section about">
+  <div class="container two-grid">
+    <div>
+      <h2>About Our Company</h2>
+      <p>We are a forward-thinking digital services agency focusing on quality, reliability and results. With a skilled team and modern approach, we help businesses transform and scale.</p>
+      <a href="#services" class="link">Learn More →</a>
+    </div>
+    <div class="img-box"></div>
   </div>
 </section>
 
-<section id="services" class="section">
+<section id="services" class="section services">
   <div class="container">
     <h2>Our Services</h2>
-    <p>Design · Development · Marketing · Automation</p>
+    <div class="grid-4">
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>Strategic business planning to boost growth & innovation.</p>
+      </div>
+      <div class="card">
+        <h3>Development</h3>
+        <p>Custom web & software development for modern businesses.</p>
+      </div>
+      <div class="card">
+        <h3>Brand Strategy</h3>
+        <p>Helping brands position, communicate & stand out.</p>
+      </div>
+      <div class="card">
+        <h3>Marketing</h3>
+        <p>Digital marketing campaigns for maximum performance.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="contact" class="section">
+<section id="why" class="section why">
   <div class="container">
-    <h2>Contact Us</h2>
-    <p>Reach out for collaboration and project inquiries.</p>
+    <h2>Why Choose Us?</h2>
+    <div class="grid-3">
+      <div class="point">
+        <h4>Experienced Team</h4>
+        <p>Work with skilled professionals across multiple domains.</p>
+      </div>
+      <div class="point">
+        <h4>Client-Focused</h4>
+        <p>We listen, plan and execute based on your business needs.</p>
+      </div>
+      <div class="point">
+        <h4>Result Driven</h4>
+        <p>Our strategies focus on measurable outcomes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="section testimonials">
+  <div class="container">
+    <h2>What Clients Say</h2>
+    <div class="grid-3">
+      <div class="t-card">
+        <p>“Professional, reliable and great experience overall.”</p>
+        <h5>- CEO, Tech Firm</h5>
+      </div>
+      <div class="t-card">
+        <p>“Delivered high-quality work and consistent updates.”</p>
+        <h5>- Founder, Startup</h5>
+      </div>
+      <div class="t-card">
+        <p>“Our project was completed on time with fantastic results.”</p>
+        <h5>- Director, Marketing Agency</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section cta">
+  <div class="container">
+    <h2>Ready to Transform?</h2>
+    <p>Let’s collaborate & build something meaningful for your business.</p>
+    <a href="mailto:contact@demo.com" class="btn">Contact Us</a>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="container footer-grid">
-
-    <div class="footer-block">
-      <h3>Company</h3>
-      <p>Placeholder text describing the company.</p>
+  <div class="container footer-top">
+    <div>
+      <h4>Company</h4>
+      <p>Digital services for modern business.</p>
     </div>
-
-    <div class="footer-block">
-      <h3>Links</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <div>
+      <h4>Links</h4>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#testimonials">Testimonials</a>
     </div>
-
-    <div class="footer-block">
-      <h3>Contact</h3>
-      <p>Email: placeholder@mail.com</p>
-      <p>Phone: +00 000 00000</p>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: contact@demo.com</p>
+      <p>Phone: +91 00000 00000</p>
     </div>
-
   </div>
   <div class="footer-bottom">
-    <p>© 2026 Placeholder | Made for internship practice</p>
+    <p>© 2026 THE EMPEROR. All rights reserved.</p>
   </div>
 </footer>
 
