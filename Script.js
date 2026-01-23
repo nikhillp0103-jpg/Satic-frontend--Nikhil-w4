@@ -1,13 +1,22 @@
-const hamburgerBtn = document.getElementById("hamburgerBtn");
-const navMenu = document.getElementById("navMenu");
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
 
-hamburgerBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
+hamburger.addEventListener("click", () => {
+    mobileMenu.style.display =
+        mobileMenu.style.display === "block" ? "none" : "block";
 });
 
-// auto close when clicking link
-document.querySelectorAll(".nav a").forEach(link=>{
-  link.addEventListener("click",()=>{
-    navMenu.classList.remove("show");
-  });
-});
+/* SCROLL ANIMATION */
+const elements = document.querySelectorAll("[data-animate]");
+
+function reveal(){
+    elements.forEach(el=>{
+        const pos = el.getBoundingClientRect().top;
+        if(pos < window.innerHeight - 100){
+            el.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", reveal);
+reveal();
