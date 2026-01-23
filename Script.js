@@ -11,4 +11,3 @@ document.querySelectorAll(".nav a").forEach(link=>{
     navMenu.classList.remove("show");
   });
 });
-
