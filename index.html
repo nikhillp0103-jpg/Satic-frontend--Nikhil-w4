@@ -1,105 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE EMPIRE - Digital Services</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE EMPIRE — Digital Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="header">
-    <div class="container">
-        <h1 class="logo">THE EMPIRE</h1>
+<header class="header glass">
+  <div class="container nav-flex">
+    <h2 class="logo">THE EMPIRE</h2>
 
-        <nav class="nav">
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
 
-        <div class="hamburger" id="hamburger">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
     </div>
+  </div>
 </header>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-    <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
 </div>
 
-<!-- HERO SECTION -->
-<section class="hero" id="hero">
-    <div class="hero-content" data-animate="fade-in">
-        <h2>We Build Digital Experiences</h2>
-        <p>Professional services for brands, startups & businesses.</p>
-        <button class="btn">Get Started</button>
+<section id="home" class="hero glass">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>We Build Digital Products That Help Businesses Grow</h1>
+      <p>Empowering startups, agencies and enterprises with technology, strategy and design.</p>
+      <a href="#contact" class="btn-primary">Start Your Project</a>
     </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services" id="services">
-    <h2 class="section-title" data-animate="slide-up">Our Services</h2>
-    <div class="service-grid">
-        <div class="card" data-animate="fade-in">
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
-            <p>Custom responsive websites & business web platforms.</p>
-        </div>
-        <div class="card" data-animate="fade-in">
-            <i class="fa-solid fa-bullhorn"></i>
-            <h3>Digital Marketing</h3>
-            <p>Grow your brand with strategy, ads & SEO optimization.</p>
-        </div>
-        <div class="card" data-animate="fade-in">
-            <i class="fa-solid fa-pen-nib"></i>
-            <h3>Brand Designing</h3>
-            <p>Logo, brand kit, visual identity & social media creatives.</p>
-        </div>
+    <div class="hero-visual">
+      <img src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Tech">
     </div>
+  </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="projects" id="projects">
-    <h2 class="section-title" data-animate="slide-up">Latest Projects</h2>
-    <div class="project-grid">
-        <div class="project-card" data-animate="zoom-in">Tech Dashboard UI</div>
-        <div class="project-card" data-animate="zoom-in">Branding Identity Kit</div>
-        <div class="project-card" data-animate="zoom-in">Corporate Landing Page</div>
+<section id="services" class="section">
+  <div class="container center">
+    <h2>Our Core Services</h2>
+    <p class="sub">End-to-end solutions crafted for performance and impact.</p>
+    <div class="grid-4 services-grid">
+      <div class="glass card"><h3>Web Development</h3><p>Full stack web apps with modern UI & fast performance.</p></div>
+      <div class="glass card"><h3>Brand Strategy</h3><p>Identity systems, messaging and positioning.</p></div>
+      <div class="glass card"><h3>SEO & Marketing</h3><p>Organic growth, PPC campaigns and analytics.</p></div>
+      <div class="glass card"><h3>Product UI/UX</h3><p>Human centered design for delightful experiences.</p></div>
     </div>
+  </div>
 </section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
-    <h2 class="section-title" data-animate="slide-up">About Us</h2>
-    <p data-animate="fade-in">We specialize in building branded digital products with clean UI and powerful digital strategies.</p>
+<section class="numbers section glass">
+  <div class="container grid-4 center">
+    <div><h2 class="counter" data-target="120">0</h2><p>Projects Delivered</p></div>
+    <div><h2 class="counter" data-target="45">0</h2><p>Clients Worldwide</p></div>
+    <div><h2 class="counter" data-target="98">0</h2><p>Satisfaction %</p></div>
+    <div><h2 class="counter" data-target="10">0</h2><p>Countries</p></div>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-    <h2 class="section-title" data-animate="slide-up">Contact Us</h2>
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" required></textarea>
-        <button class="btn">Send Message</button>
-    </form>
+<section id="projects" class="section">
+  <div class="container center">
+    <h2>Recent Projects</h2>
+    <div class="grid-3 projects-grid">
+      <div class="glass pcard"><img src="https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&w=800"><h4>Finance Platform</h4></div>
+      <div class="glass pcard"><img src="https://images.pexels.com/photos/3730763/pexels-photo-3730763.jpeg?auto=compress&w=800"><h4>Brand Website</h4></div>
+      <div class="glass pcard"><img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&w=800"><h4>E-Commerce UI</h4></div>
+    </div>
+  </div>
 </section>
 
-<footer>
-    <p>© 2026 THE EMPIRE — All Rights Reserved.</p>
+<section id="pricing" class="section">
+  <div class="container center">
+    <h2>Pricing Plans</h2>
+    <div class="grid-3 price-grid">
+      <div class="glass price"><h3>Starter</h3><h2>$199</h2><p>Landing Page • Basic SEO • Support</p><a class="btn-primary" href="#contact">Choose</a></div>
+      <div class="glass price featured"><h3>Business</h3><h2>$499</h2><p>5 Pages • SEO • Analytics • Strategy</p><a class="btn-primary" href="#contact">Choose</a></div>
+      <div class="glass price"><h3>Enterprise</h3><h2>$999</h2><p>Custom Build • Growth • Integrations</p><a class="btn-primary" href="#contact">Choose</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container center">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <div class="faq-item"><button>Do you support custom projects?</button><p>Yes! We specialize in fully custom digital products.</p></div>
+      <div class="faq-item"><button>How long does delivery take?</button><p>Most projects are delivered within 2-6 weeks.</p></div>
+      <div class="faq-item"><button>Do you offer support?</button><p>We provide extended support & maintenance.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta glass center">
+  <h2>Work With Us</h2>
+  <p>Let's build something impactful together.</p>
+  <a href="mailto:contact@demo.com" class="btn-primary">Contact Us</a>
+</section>
+
+<footer class="footer glass">
+  <div class="container footer-grid">
+    <div><h4>THE EMPIRE</h4><p>Digital solutions for modern businesses.</p></div>
+    <div><h4>Links</h4><a href="#services">Services</a><a href="#projects">Projects</a><a href="#pricing">Pricing</a></div>
+    <div><h4>Follow</h4><p>Twitter • Dribbble • LinkedIn</p></div>
+  </div>
+  <div class="footer-bottom">© 2026 — All Rights Reserved.</div>
 </footer>
 
 <script src="script.js"></script>
