@@ -223,8 +223,8 @@ body{
 /* MOBILE NAV SLIDE DOWN */
 @media(max-width:900px){
   .nav{
-    position:absolute;
-    top:-300px;
+    position:fixed; /* Changed from absolute */
+    top:70px; /* Increased from 60px for padding */
     left:0;
     width:100%;
     background:#fff;
@@ -235,7 +235,9 @@ body{
     transition:0.4s;
     border-bottom:1px solid #ddd;
     z-index:40;
+    box-shadow:var(--shadow); /* Added for visibility */
   }
-  .nav.show{top:60px;}
+  .nav.show{top:70px;}
   .hamburger{display:flex;}
+  .nav-flex{padding:16px 0 16px 16px;} /* Padding to avoid logo overlap */
 }
