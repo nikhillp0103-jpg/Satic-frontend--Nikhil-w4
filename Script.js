@@ -1,17 +1,31 @@
-// Sidebar toggle
+// SIDEBAR & OVERLAY TOGGLE
 const hamburger = document.getElementById("hamburger");
 const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
 
 hamburger.addEventListener("click", () => {
   sidebar.classList.toggle("open");
+  overlay.style.opacity = sidebar.classList.contains("open") ? "1" : "0";
+  overlay.style.visibility = sidebar.classList.contains("open") ? "visible" : "hidden";
+});
+
+// Close sidebar on overlay click
+overlay.addEventListener("click", () => {
+  sidebar.classList.remove("open");
+  overlay.style.opacity = "0";
+  overlay.style.visibility = "hidden";
 });
 
 // Close sidebar when clicking a link
 document.querySelectorAll(".sidebar a").forEach(link => {
-  link.addEventListener("click", () => sidebar.classList.remove("open"));
+  link.addEventListener("click", () => {
+    sidebar.classList.remove("open");
+    overlay.style.opacity = "0";
+    overlay.style.visibility = "hidden";
+  });
 });
 
-// Counter animation
+// Counter Animation
 const counters = document.querySelectorAll(".counter");
 const speed = 100;
 counters.forEach(counter => {
@@ -27,7 +41,7 @@ counters.forEach(counter => {
   update();
 });
 
-// FAQ accordion
+// FAQ Accordion
 document.querySelectorAll(".faq-item button").forEach(btn => {
   btn.addEventListener("click", () => {
     const p = btn.nextElementSibling;
@@ -35,7 +49,7 @@ document.querySelectorAll(".faq-item button").forEach(btn => {
   });
 });
 
-// Dark/Light mode toggle
+// Dark/Light Mode
 const themeToggle = document.getElementById("themeToggle");
 let dark = false;
 themeToggle.addEventListener("click", () => {
