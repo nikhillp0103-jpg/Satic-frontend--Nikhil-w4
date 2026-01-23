@@ -289,3 +289,12 @@ html, body {
   .nav-links { display:none; }
   .hamburger { display:flex; }
 }
+.dark {
+  background: #0f141a !important;
+  color: #e8e8e8 !important;
+}
+.dark .glass {
+  background: rgba(255,255,255,0.08) !important;
+  border-color: rgba(255,255,255,0.12) !important;
+}
+.dark a { color:#fff !important; }
