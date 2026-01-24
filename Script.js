@@ -1,79 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.getElementById('menuToggle');
-  const navLinks = document.getElementById('navLinks');
-  const navigation = document.querySelector('.navigation');
+const menuToggle = document.getElementById("menuToggle");
+const navigation = document.getElementById("navigation");
 
-  // Toggle mobile menu
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-      navLinks.classList.toggle('active');
-      menuToggle.classList.toggle('active');
-      navigation.classList.toggle('active');
-      document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-    });
-  }
-
-  // Close menu on outside click
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.header-wrapper') && navLinks?.classList.contains('active')) {
-      navLinks.classList.remove('active');
-      menuToggle?.classList.remove('active');
-      navigation?.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  });
-
-  // Smooth scrolling & close menu
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-      if (navLinks?.classList.contains('active')) {
-        navLinks.classList.remove('active');
-        menuToggle?.classList.remove('active');
-        navigation?.classList.remove('active');
-        document.body.style.overflow = '';
-      }
-    });
-  });
-
-  // Your existing scroll animations (keep as is)
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0) translateX(0)';
-      }
-    });
-  }, { threshold: 0.15, rootMargin: '0px 0px -80px 0px' });
-
-  document.querySelectorAll('.service-card, .testimonial-card, .hero-text, .hero-visual').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    observer.observe(el);
-  });
-
-  // Header scroll effect (keep as is)
-  let ticking = false;
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        const header = document.querySelector('.site-header');
-        const scrolled = window.scrollY > 100;
-        if (scrolled) {
-          header.style.background = 'linear-gradient(135deg, rgba(184,134,11,0.95), rgba(255,215,0,0.9))';
-          header.style.backdropFilter = 'blur(20px)';
-        } else {
-          header.style.background = 'linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #ffd700 100%)';
-          header.style.backdropFilter = 'blur(10px)';
-        }
-        ticking = false;
-      });
-      ticking = true;
-    }
-  });
+menuToggle.addEventListener("click", () => {
+    navigation.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+    document.body.classList.toggle("nav-open");
 });
