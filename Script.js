@@ -1,26 +1,16 @@
-/* MENU */
-const hamburger = document.getElementById("hamburgerBtn");
+const burger = document.getElementById("burger");
 const navMenu = document.getElementById("navMenu");
 
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-  hamburger.classList.toggle("active");
+burger.onclick = () => {
+    navMenu.classList.toggle("show");
+};
+
+const scrollTop = document.getElementById("scrollTop");
+
+window.addEventListener("scroll", () => {
+    scrollTop.style.display = window.scrollY > 200 ? "block" : "none";
 });
 
-/* TESTIMONIAL CAROUSEL */
-const track = document.getElementById("carouselTrack");
-const prev = document.getElementById("prevBtn");
-const next = document.getElementById("nextBtn");
-
-let index = 0;
-
-next.onclick = () => move(1);
-prev.onclick = () => move(-1);
-
-function move(dir) {
-  const cards = track.children.length;
-  index = (index + dir + cards) % cards;
-  track.style.transform = `translateX(${-index * 100}%)`;
-}
-
-setInterval(() => move(1), 3500);
+scrollTop.onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
