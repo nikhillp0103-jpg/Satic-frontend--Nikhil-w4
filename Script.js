@@ -1,16 +1,33 @@
-const burger = document.getElementById("burger");
-const navMenu = document.getElementById("navMenu");
+// Hamburger toggle
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
 
-burger.onclick = () => {
-    navMenu.classList.toggle("show");
+hamburger.onclick = () => {
+    menu.classList.toggle("show");
 };
 
-const scrollTop = document.getElementById("scrollTop");
+// Go to top
+const goTop = document.getElementById("goTop");
 
 window.addEventListener("scroll", () => {
-    scrollTop.style.display = window.scrollY > 200 ? "block" : "none";
+    goTop.style.display = window.scrollY > 200 ? "block" : "none";
 });
 
-scrollTop.onclick = () => {
+goTop.onclick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+// Reveal animations
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+    reveals.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+            el.classList.add("show");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
