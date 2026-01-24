@@ -1,130 +1,85 @@
+This is my colleague html 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>THE EMPIRE — Premium Showcase</title>
+    <title>Static Site Rebuild</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="nav">
-    <div class="nav-inner">
-        <div class="brand">THE EMPIRE</div>
 
-        <nav id="menu" class="menu">
-            <a href="#home" class="link">Home</a>
-            <a href="#about" class="link">About</a>
-            <a href="#features" class="link">Features</a>
-            <a href="#stats" class="link">Stats</a>
-            <a href="#contact" class="primary-btn">Contact</a>
-        </nav>
+<header class="navbar">
+    <div class="logo">LOGO</div>
 
-        <div id="hamburger" class="hamburger">☰</div>
-    </div>
+    <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact" class="primary-btn">Contact</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
 </header>
 
-<section id="home" class="hero reveal">
-    <h1 class="hero-title">Premium Digital Showcase</h1>
-    <p class="hero-sub">High-end static web experience built with HTML, CSS & JS</p>
-    <button class="cta-main">Explore More</button>
+
+<section class="search-section">
+    <input type="text" placeholder="Search here">
+    <button>Search</button>
 </section>
 
-<section class="reveal search">
-    <input type="text" placeholder="Search here...">
-    <button class="search-btn">Search</button>
+<section id="home" class="hero">
+    <h1>Static Site Rebuild</h1>
+    <p>Frontend internship task using HTML, CSS & JavaScript</p>
 </section>
 
-<section id="about" class="about reveal">
-    <h2>About Us</h2>
-    <p>THE EMPIRE delivers premium visuals and strong brand presence. Our web showcase highlights modern UI practices tailored for professional exposure.</p>
-</section>
 
-<section id="features" class="features reveal">
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546" alt="">
-        <h3>Elegant UI</h3>
-        <p>A refined interface designed for deluxe branding.</p>
+<div class="features-container">
+
+    <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Clean UI">
+        <h3>Clean UI</h3>
+        <p>Simple and structured layout design.</p>
     </div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1590642918118-5c2d07e8de72" alt="">
-        <h3>Responsive Layouts</h3>
-        <p>Seamlessly adapts to all screen sizes and orientations.</p>
+    <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f" alt="Responsive">
+        <h3>Responsive</h3>
+        <p>Optimized for mobile and desktop screens.</p>
     </div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="">
-        <h3>Reusable Components</h3>
-        <p>Designed modularly for branding scalability.</p>
+    <div class="feature-card">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="Reusable">
+        <h3>Reusable</h3>
+        <p>Easy to extend and customize code.</p>
     </div>
-</section>
 
-<section id="stats" class="stats reveal">
-    <div class="stat-box">
-        <h2>12+</h2>
-        <p>Years of Experience</p>
-    </div>
-    <div class="stat-box">
-        <h2>150+</h2>
-        <p>Clients Worldwide</p>
-    </div>
-    <div class="stat-box">
-        <h2>50K+</h2>
-        <p>Users Reached</p>
-    </div>
-</section>
+</div>
 
-<section class="testimonials reveal">
-    <h2>What Clients Say</h2>
-    <div class="test-grid">
-        <div class="test">
-            <p>"Incredible visual quality. The brand feels premium instantly."</p>
-            <span>- Victoria</span>
-        </div>
-        <div class="test">
-            <p>"Clean design and smooth animations. Great experience."</p>
-            <span>- Marcus</span>
-        </div>
-        <div class="test">
-            <p>"A reliable static showcase that looks like a million dollars."</p>
-            <span>- Angela</span>
-        </div>
-    </div>
-</section>
 
-<section id="contact" class="contact reveal">
+
+<section id="contact" class="section">
     <h2>Contact Us</h2>
+
     <form>
         <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Email Address">
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit" class="primary-btn">Send Message</button>
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Submit</button>
     </form>
 </section>
 
-<footer class="footer reveal">
-    <div class="footer-cols">
-        <div>
-            <h3>Brand</h3>
-            <p>Premium web presentations built with style.</p>
-        </div>
-        <div>
-            <h3>Links</h3>
-            <a>Home</a><br>
-            <a>About</a><br>
-            <a>Features</a>
-        </div>
-        <div>
-            <h3>Contact</h3>
-            <p>info@theempire.com</p>
-        </div>
-    </div>
-    <p class="copy">© 2026 THE EMPIRE – All Rights Reserved</p>
+
+<footer class="footer">
+    © Copyright by THAKOR SNEHA | 2026 Static Website Rebuild 
 </footer>
 
-<button id="goTop" class="goTop">↑</button>
+
+<button id="goTop">↑</button>
 
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+    
