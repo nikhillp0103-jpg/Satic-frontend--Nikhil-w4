@@ -1,21 +1,11 @@
+const mobileNav = document.getElementById("mobileNav");
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const closeBtn = document.getElementById("closeBtn");
 
-
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
-
-hamburger.onclick = () => {
-    navLinks.classList.toggle("show");
-};
-
-
-const goTop = document.getElementById("goTop");
-
-window.addEventListener("scroll", () => {
-    goTop.style.display = window.scrollY > 200 ? "block" : "none";
+hamburgerBtn.addEventListener("click", () => {
+    mobileNav.classList.add("active");
 });
 
-goTop.onclick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-};
-
-
+closeBtn.addEventListener("click", () => {
+    mobileNav.classList.remove("active");
+});
