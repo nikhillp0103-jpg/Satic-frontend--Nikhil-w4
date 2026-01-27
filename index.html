@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMPIRE - Frontend Training</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <h1>THE EMPIRE</h1>
-            <nav>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -22,67 +27,71 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="hero">
         <div class="container">
-            <h2>Welcome to Our Site</h2>
-            <p>Hero placeholder text: Discover amazing features and get started today.</p>
-            <button>Call to Action</button>
+            <h2>Welcome to EMPIRE</h2>
+            <p>Master Frontend Development with India's Top Training Institute</p>
+            <button>Get Started</button>
         </div>
     </section>
 
-    <!-- Content Sections -->
+    <!-- Main -->
     <main class="container">
         <section id="about">
-            <h2>About Us</h2>
-            <p>We are a leading training institute focused on frontend development skills.</p>
-            <p>Our programs cover HTML, CSS, JavaScript, and modern frameworks for aspiring developers.</p>
+            <h2>About EMPIRE Academy</h2>
+            <p>India's premier frontend development institute with 5000+ placements.</p>
             <ul>
-                <li>Expert instructors with industry experience</li>
-                <li>Hands-on projects and real-world applications</li>
-                <li>Placement assistance for top opportunities</li>
+                <li>100+ Hiring Partners (TCS, Infosys, Accenture)</li>
+                <li>6 Months Intensive Bootcamp</li>
+                <li>Live Projects + GitHub Portfolio</li>
+                <li>100% Placement Assistance</li>
             </ul>
         </section>
 
         <section id="services">
-            <h2>Our Services</h2>
-            <p>We offer comprehensive courses tailored for beginners to advanced learners.</p>
+            <h2>Our Courses</h2>
             <ul>
-                <li>Frontend Development Bootcamp (3 months)</li>
-                <li>React Native Mobile App Development</li>
+                <li>Frontend Mastery (HTML/CSS/JS/React) - 4 Months</li>
+                <li>React Native Mobile Apps - 3 Months</li>
+                <li>Full Stack MERN Development - 6 Months</li>
                 <li>UI/UX Design Fundamentals</li>
-                <li>Full-Stack Web Development Path</li>
             </ul>
-            <p>Each course includes live sessions, assignments, and portfolio building.</p>
         </section>
 
         <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>Join our next batch or schedule a demo session.</p>
-            <ul>
-                <li>Email: info@example.com</li>
-                <li>Phone: +91 123-456-7890</li>
-                <li>Address: Hyderabad, Telangana, India</li>
-            </ul>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <button type="submit">Send Message</button>
-            </form>
+            <h2>Join Next Batch</h2>
+            <p>📧 info@empireacademy.in | 📞 +91 98456 78901</p>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 EMPIRE. All rights reserved.</p>
+            <p>&copy; 2026 THE EMPIRE. All rights reserved.</p>
             <ul>
                 <li><a href="#privacy">Privacy</a></li>
                 <li><a href="#terms">Terms</a></li>
             </ul>
         </div>
     </footer>
+
+    <!-- JS EMBEDDED HERE -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+            
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
