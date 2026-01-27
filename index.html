@@ -3,89 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Site Rebuild</title>
+    <title>EMPIRE - Frontend Training</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>THE EMPIRE</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>EMPIRE</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-        <h2>Welcome to Our Site</h2>
-        <p>Hero placeholder text: Discover amazing features and get started today.</p>
-        <button>Call to Action</button>
+        <div class="container">
+            <h2>Welcome to Our Site</h2>
+            <p>Hero placeholder text: Discover amazing features and get started today.</p>
+            <button>Call to Action</button>
+        </div>
     </section>
 
     <!-- Content Sections -->
-    <main>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a leading training institute focused on frontend development skills.</p>
-        <p>Our programs cover HTML, CSS, JavaScript, and modern frameworks for aspiring developers.</p>
-        <ul>
-            <li>Expert instructors with industry experience</li>
-            <li>Hands-on projects and real-world applications</li>
-            <li>Placement assistance for top opportunities</li>
-        </ul>
-    </section>
+    <main class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a leading training institute focused on frontend development skills.</p>
+            <p>Our programs cover HTML, CSS, JavaScript, and modern frameworks for aspiring developers.</p>
+            <ul>
+                <li>Expert instructors with industry experience</li>
+                <li>Hands-on projects and real-world applications</li>
+                <li>Placement assistance for top opportunities</li>
+            </ul>
+        </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>We offer comprehensive courses tailored for beginners to advanced learners.</p>
-        <ul>
-            <li>Frontend Development Bootcamp (3 months)</li>
-            <li>React Native Mobile App Development</li>
-            <li>UI/UX Design Fundamentals</li>
-            <li>Full-Stack Web Development Path</li>
-        </ul>
-        <p>Each course includes live sessions, assignments, and portfolio building.</p>
-    </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer comprehensive courses tailored for beginners to advanced learners.</p>
+            <ul>
+                <li>Frontend Development Bootcamp (3 months)</li>
+                <li>React Native Mobile App Development</li>
+                <li>UI/UX Design Fundamentals</li>
+                <li>Full-Stack Web Development Path</li>
+            </ul>
+            <p>Each course includes live sessions, assignments, and portfolio building.</p>
+        </section>
 
-    <section id="testimonials">
-        <h2>What Students Say</h2>
-        <blockquote>
-            <p>"Transformed my career in frontend development!"</p>
-            <cite>- Student A</cite>
-        </blockquote>
-        <blockquote>
-            <p>"Excellent support and practical projects."</p>
-            <cite>- Student B</cite>
-        </blockquote>
-    </section>
-
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Join our next batch or schedule a demo session.</p>
-        <ul>
-            <li>Email: info@example.com</li>
-            <li>Phone: +91 123-456-7890</li>
-            <li>Address: Hyderabad, Telangana, India</li>
-        </ul>
-        <form>
-            <label for="name">Name:</label><input type="text" id="name">
-            <label for="email">Email:</label><input type="email" id="email">
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Join our next batch or schedule a demo session.</p>
+            <ul>
+                <li>Email: info@example.com</li>
+                <li>Phone: +91 123-456-7890</li>
+                <li>Address: Hyderabad, Telangana, India</li>
+            </ul>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 THE EMPEROR. All rights reserved.</p>
-        <ul>
-            <li><a href="#privacy">Privacy</a></li>
-            <li><a href="#terms">Terms</a></li>
-        </ul>
+        <div class="container">
+            <p>&copy; 2026 EMPIRE. All rights reserved.</p>
+            <ul>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#terms">Terms</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
