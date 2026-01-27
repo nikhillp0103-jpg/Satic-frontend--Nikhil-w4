@@ -156,26 +156,28 @@ footer ul {
 
 
 /* Hamburger Menu */
+/* Hamburger Menu - VISIBLE GOLD */
 .hamburger {
     display: none;
     flex-direction: column;
     width: 30px;
     height: 25px;
     background: none;
-    border: none;
+    border: 2px solid #ffd700;
     cursor: pointer;
     padding: 5px;
+    border-radius: 5px;
 }
 
 .hamburger span {
     width: 100%;
-    height: 3px;
-    background: #f4c430;
-    margin: 3px 0;
+    height: 4px;
+    background: #ffd700 !important;
+    margin: 2px 0;
     transition: 0.3s;
-    border-radius: 3px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
-
 .nav-menu {
     position: relative;
 }
