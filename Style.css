@@ -240,15 +240,22 @@ footer a:hover { color: #ffd700; }
     }
     
     .nav-menu a {
-        font-size: 1.8rem;
-        padding: 1.5rem;
+        font-size: 1.3rem;
+        padding: 0.8rem 1.2rem;
         display: block;
-        width: 80%;
+        width: auto;
+        max-width: 250px;
+        margin: 0.5rem auto;
         text-align: center;
-        margin: 0.5rem 0;
-        border-radius: 10px;
+        border-radius: 6px;
         background: rgba(255,215,0,0.1);
         border: 1px solid rgba(255,215,0,0.2);
+        transition: background-color 0.3s ease;
+    }
+    
+    .nav-menu a:hover {
+        background-color: rgba(255,215,0,0.2);
+        color: #ffd700;
     }
     
     #hero { padding: 4rem 1rem 3rem; }
