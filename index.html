@@ -218,33 +218,38 @@
     <!-- JS EMBEDDED HERE -->
     <script>
 document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    // Hamburger menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  // ✅ Hamburger toggle (safe)
+  if (hamburger && navMenu) {
     hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
+      navMenu.classList.toggle('active');
     });
-    
-    // Close menu when clicking nav links
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-        });
+  }
+
+  // ✅ Close menu on link click
+  document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
     });
-    
-    // "Get Started" button scrolls to Contact section
-    const getStartedBtn = document.querySelector('#hero button');
-    const contactSection = document.getElementById('contact');
-    
+  });
+
+  // ✅ Get Started scroll (safe)
+  const getStartedBtn = document.querySelector('#hero button');
+  const contactSection = document.getElementById('contact');
+
+  if (getStartedBtn && contactSection) {
     getStartedBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        contactSection.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
-        });
+      e.preventDefault();
+      contactSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     });
+  }
 });
+        
     </script>
 </body>
 </html>
