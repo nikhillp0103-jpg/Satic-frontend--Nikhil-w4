@@ -1,261 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova Solutions - Software Development</title>
-    <link rel="stylesheet" href="Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE EMPIRE</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-  <div class="header-wrapper">
-    <div class="logo">TECHNOVA SOLUTIONS</div>
 
-    <nav class="navigation" id="nav">
-      <ul class="nav-links">
-        <li><a href="#home">🏠 Home</a></li>
-        <li><a href="#about">ℹ️ About</a></li>
-        <li><a href="#services">⚙️ Services</a></li>
-        <li><a href="#contact">📞 Contact</a></li>
+<!-- HEADER -->
+<header class="header">
+  <div class="container nav-flex">
+
+    <div class="logo">THE EMPIRE</div>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
       </ul>
     </nav>
 
-    <div class="menu-toggle" id="menuToggle">☰</div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
   </div>
-    </header>
-    
+</header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-banner">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Welcome to TechNova</h2>
-                <p>Innovative Software Solutions for Modern Businesses</p>
-                <button>Get Started</button>
-            </div>
-            <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2"
-         alt="Modern software development"
-         loading="lazy">
-            </div>
-            
-        </div>
-    </section>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <h1>Build. Scale. Dominate.</h1>
+    <p>We help brands grow with modern design, development, and digital strategy.</p>
+    <button id="getStarted">Get Started</button>
+  </div>
+</section>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <h2>🚀 About TechNova Solutions</h2>
-            <p>Leading software development company with <strong>1000+ projects delivered</strong> to global clients.</p>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>🎯 Our Mission</h3>
-                    <p>Delivering cutting-edge software solutions that drive business growth and innovation.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🏆 Expertise</h3>
-                    <p><strong>15+ years</strong> of experience in web and mobile app development.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>📈 Client Base</h3>
-                    <p>500+ satisfied clients including Fortune 500 companies.</p>
-                </div>
-            </div>
-            <ul class="benefits-list">
-                <li>✅ Custom Web Applications</li>
-                <li>✅ Mobile App Development</li>
-                <li>✅ Cloud Solutions & AI Integration</li>
-                <li>✅ 24/7 Support & Maintenance</li>
-                <li>✅ Agile Development Process</li>
-            </ul>
-        </section>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      THE EMPIRE is a premium digital agency focused on delivering high-impact
+      solutions for startups and enterprises worldwide.
+    </p>
+  </div>
+</section>
 
-        <!-- Services Section -->
-        <section id="services" class="services-section">
-            <h2>⚙️ Our Services</h2>
-            <p>Comprehensive software solutions tailored to your needs - <strong>Start your project today!</strong></p>
-            <div class="services-grid">
-                <article class="service-card">
-                    <h3>🌐 Web Development</h3>
-                    <p><strong>React | Node.js | Full-Stack Solutions</strong></p>
-                    <p class="price"><strong>$5,000</strong> | 2-3 Months</p>
-                    <button>Get Quote</button>
-                </article>
-                <article class="service-card">
-                    <h3>📱 Mobile Apps</h3>
-                    <p><strong>React Native | iOS/Android | Cross-Platform</strong></p>
-                    <p class="price"><strong>$8,000</strong> | 3-4 Months</p>
-                    <button>Get Quote</button>
-                </article>
-                <article class="service-card">
-                    <h3>☁️ Cloud Solutions</h3>
-                    <p><strong>AWS | Azure | DevOps | Scalable Apps</strong></p>
-                    <p class="price"><strong>$10,000</strong> | 4-6 Months</p>
-                    <button>Get Quote</button>
-                </article>
-            </div>
-        </section>
+<!-- SERVICES -->
+<section id="services" class="section dark">
+  <div class="container">
+    <h2>Our Services</h2>
 
-        <!-- Team Section -->
-        <section id="team" class="team-section">
-            <h2>👥 Meet Our Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2300ffff'/><text x='50%' y='55%' font-size='12' fill='%23000' text-anchor='middle'>JD</text></svg>" alt="John Doe" />
-                    <h3>John Doe</h3>
-                    <p>Lead Developer</p>
-                    <p>Expert in React and Node.js with 10+ years experience.</p>
-                </div>
-                <div class="team-member">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2300ffff'/><text x='50%' y='55%' font-size='12' fill='%23000' text-anchor='middle'>JS</text></svg>" alt="Jane Smith" />
-                    <h3>Jane Smith</h3>
-                    <p>UI/UX Designer</p>
-                    <p>Creating intuitive designs for web and mobile apps.</p>
-                </div>
-                <div class="team-member">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2300ffff'/><text x='50%' y='55%' font-size='12' fill='%23000' text-anchor='middle'>MJ</text></svg>" alt="Mike Johnson" />
-                    <h3>Mike Johnson</h3>
-                    <p>Project Manager</p>
-                    <p>Ensuring timely delivery and client satisfaction.</p>
-                </div>
-            </div>
-        </section>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p>Luxury, responsive UI/UX tailored for conversions.</p>
+      </div>
+      <div class="service-card">
+        <h3>Development</h3>
+        <p>Fast, secure, scalable websites & applications.</p>
+      </div>
+      <div class="service-card">
+        <h3>Brand Strategy</h3>
+        <p>Build a powerful and memorable digital presence.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- Stats Section -->
-        <section class="stats-section">
-            <h2>📊 Our Achievements</h2>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">1000+</div>
-                    <p>Projects Completed</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">500+</div>
-                    <p>Happy Clients</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">99%</div>
-                    <p>Satisfaction Rate</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">15+</div>
-                    <p>Years Experience</p>
-                </div>
-            </div>
-        </section>
+<!-- STATS -->
+<section id="stats" class="section">
+  <div class="container stats">
+    <div class="stat">
+      <h3>250+</h3>
+      <p>Projects</p>
+    </div>
+    <div class="stat">
+      <h3>120+</h3>
+      <p>Clients</p>
+    </div>
+    <div class="stat">
+      <h3>8+</h3>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat">
+      <h3>24/7</h3>
+      <p>Support</p>
+    </div>
+  </div>
+</section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials-section">
-            <h2>💬 What Clients Say</h2>
-            <div class="testimonials-grid">
-                <article class="testimonial-card">
-                    <p>"TechNova transformed our business with a seamless web app. <strong>Highly recommended!</strong>"</p>
-                    <cite>— Sarah L., CEO of StartupX</cite>
-                </article>
-                <article class="testimonial-card">
-                    <p>"Outstanding mobile app development. Delivered on time and exceeded expectations."</p>
-                    <cite>— David R., Product Manager</cite>
-                </article>
-                <article class="testimonial-card">
-                    <p>"Their cloud solutions scaled our operations perfectly. <strong>Top-notch team!</strong>"</p>
-                    <cite>— Emily T., CTO</cite>
-                </article>
-            </div>
-        </section>
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Let’s build something extraordinary together.</p>
+  </div>
+</section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <h2>🚀 Start Your Project Today</h2>
-            <p><strong>Free consultation available!</strong> Let's discuss your ideas.</p>
-            <div class="contact-layout">
-                <aside class="contact-info">
-                    <h3>📞 Contact Info</h3>
-                    <ul>
-                        <li>📧 info@technovasolutions.com</li>
-                        <li>📞 +1 234 567 8901</li>
-                        <li>📍 New York, NY</li>
-                        <li>⏰ Mon-Fri: 9 AM - 6 PM</li>
-                    </ul>
-                </aside>
-                <form class="contact-form">
-                    <input type="text" placeholder="Full Name *" required>
-                    <input type="tel" placeholder="Phone Number *" required>
-                    <input type="email" placeholder="Email Address *" required>
-                    <select required>
-                        <option>Select Service</option>
-                        <option>Web Development</option>
-                        <option>Mobile Apps</option>
-                        <option>Cloud Solutions</option>
-                    </select>
-                    <button type="submit">🚀 GET FREE CONSULTATION</button>
-                </form>
-            </div>
-        </section>
-    </main>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 THE EMPIRE. All rights reserved.</p>
+  </div>
+</footer>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 TechNova Solutions. All rights reserved.</p>
-                <ul class="footer-links">
-                    <li><a href="#privacy">Privacy</a></li>
-                    <li><a href="#terms">Terms</a></li>
-                </ul>
-                <div class="newsletter">
-                    <h3>Subscribe to Updates</h3>
-                    <input type="email" placeholder="Your Email">
-                    <button>Subscribe</button>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JS EMBEDDED HERE -->
-    <script>
+<!-- EMBEDDED JS -->
+<script>
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.getElementById('hamburger');
-  const navMenu = document.querySelector('.nav-menu');
+  const navMenu = document.getElementById('navMenu');
+  const getStartedBtn = document.getElementById('getStarted');
+  const contactSection = document.getElementById('contact');
 
-  // ✅ Hamburger toggle (safe)
-  if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-  }
+  // Hamburger toggle
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
 
-  // ✅ Close menu on link click
+  // Close menu on link click
   document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
       navMenu.classList.remove('active');
     });
   });
 
-  // ✅ Get Started scroll (safe)
-  const getStartedBtn = document.querySelector('#hero button');
-  const contactSection = document.getElementById('contact');
-
-  if (getStartedBtn && contactSection) {
-    getStartedBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      contactSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    });
-  }
+  // Smooth scroll
+  getStartedBtn.addEventListener('click', () => {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  });
 });
-        
-    </script>
+</script>
+
 </body>
 </html>
-
-
-
-
-
-
