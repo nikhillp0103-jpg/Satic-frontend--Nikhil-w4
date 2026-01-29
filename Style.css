@@ -255,10 +255,28 @@ footer {
     display: flex;
   }
 
-  
+  /* HIDE menu by default */
+  .nav-menu ul {
+    position: fixed;
+    top: 70px; /* below header */
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.98);
 
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding: 1.5rem 0;
+
+    transform: translateY(-120%);
+    transition: transform 0.35s ease;
+    z-index: 999;
+  }
+
+  /* SHOW menu only when active */
   .nav-menu.active ul {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   .hero-banner .container {
