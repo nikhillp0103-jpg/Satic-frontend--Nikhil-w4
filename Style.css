@@ -582,4 +582,18 @@ footer {
     .contact-layout {
         grid-template-columns: 1fr;
     }
+
+    .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.45);
+}
     
