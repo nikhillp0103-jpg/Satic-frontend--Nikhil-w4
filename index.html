@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNova Solutions - Software Development</title>
     <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -18,184 +19,197 @@
             </button>
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">🏠 Home</a></li>
+                    <li><a href="#about">ℹ️ About</a></li>
+                    <li><a href="#services">⚙️ Services</a></li>
+                    <li><a href="#contact">📞 Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section id="hero">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-banner">
         <div class="container">
-            <h2>Welcome to TechNova</h2>
-            <p>Innovative Software Solutions for Modern Businesses</p>
-            <button>Get Started</button>
+            <div class="hero-content">
+                <h2>Welcome to TechNova</h2>
+                <p>Innovative Software Solutions for Modern Businesses</p>
+                <button>Get Started</button>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for hero image -->
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23000'/><text x='50%' y='50%' font-size='20' fill='%2300ffff' text-anchor='middle'>TechNova</text></svg>" alt="TechNova Hero" />
+            </div>
         </div>
     </section>
 
-    <!-- Main -->
+    <!-- Main Content -->
     <main class="container">
-    <!-- About Section -->
-    <section id="about">
-        <h2>About TechNova Solutions</h2>
-        <p>Leading software development company with <strong>1000+ projects delivered</strong> to global clients.</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
-            <div>
-                <h3 style="color: #007bff; margin-bottom: 1rem;">🎯 Our Mission</h3>
-                <p>Delivering cutting-edge software solutions that drive business growth and innovation.</p>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>🚀 About TechNova Solutions</h2>
+            <p>Leading software development company with <strong>1000+ projects delivered</strong> to global clients.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🎯 Our Mission</h3>
+                    <p>Delivering cutting-edge software solutions that drive business growth and innovation.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🏆 Expertise</h3>
+                    <p><strong>15+ years</strong> of experience in web and mobile app development.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📈 Client Base</h3>
+                    <p>500+ satisfied clients including Fortune 500 companies.</p>
+                </div>
             </div>
-            <div>
-                <h3 style="color: #007bff; margin-bottom: 1rem;">🏆 Expertise</h3>
-                <p><strong>15+ years</strong> of experience in web and mobile app development.</p>
-            </div>
-            <div>
-                <h3 style="color: #007bff; margin-bottom: 1rem;">📈 Client Base</h3>
-                <p>500+ satisfied clients including Fortune 500 companies.</p>
-            </div>
-        </div>
-        <ul>
-            <li>✅ Custom Web Applications</li>
-            <li>✅ Mobile App Development</li>
-            <li>✅ Cloud Solutions & AI Integration</li>
-            <li>✅ 24/7 Support & Maintenance</li>
-            <li>✅ Agile Development Process</li>
-        </ul>
-    </section>
+            <ul class="benefits-list">
+                <li>✅ Custom Web Applications</li>
+                <li>✅ Mobile App Development</li>
+                <li>✅ Cloud Solutions & AI Integration</li>
+                <li>✅ 24/7 Support & Maintenance</li>
+                <li>✅ Agile Development Process</li>
+            </ul>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>Comprehensive software solutions tailored to your needs - <strong>Start your project today!</strong></p>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
-            <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; border: 1px solid rgba(0,123,255,0.2);">
-                <h3 style="color: #007bff; font-size: 1.5rem; margin-bottom: 1rem;">Web Development</h3>
-                <p><strong>React | Node.js | Full-Stack Solutions</strong></p>
-                <p style="font-size: 1.4rem; margin: 1rem 0;"><strong>$5,000</strong> | 2-3 Months</p>
-                <button style="width: 100%; background: #007bff; color: #ffffff; border: none; padding: 1rem; border-radius: 10px; font-weight: bold; cursor: pointer;">Get Quote</button>
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <h2>⚙️ Our Services</h2>
+            <p>Comprehensive software solutions tailored to your needs - <strong>Start your project today!</strong></p>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>🌐 Web Development</h3>
+                    <p><strong>React | Node.js | Full-Stack Solutions</strong></p>
+                    <p class="price"><strong>$5,000</strong> | 2-3 Months</p>
+                    <button>Get Quote</button>
+                </article>
+                <article class="service-card">
+                    <h3>📱 Mobile Apps</h3>
+                    <p><strong>React Native | iOS/Android | Cross-Platform</strong></p>
+                    <p class="price"><strong>$8,000</strong> | 3-4 Months</p>
+                    <button>Get Quote</button>
+                </article>
+                <article class="service-card">
+                    <h3>☁️ Cloud Solutions</h3>
+                    <p><strong>AWS | Azure | DevOps | Scalable Apps</strong></p>
+                    <p class="price"><strong>$10,000</strong> | 4-6 Months</p>
+                    <button>Get Quote</button>
+                </article>
             </div>
-            
-            <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; border: 1px solid rgba(0,123,255,0.2);">
-                <h3 style="color: #007bff; font-size: 1.5rem; margin-bottom: 1rem;">Mobile Apps</h3>
-                <p><strong>React Native | iOS/Android | Cross-Platform</strong></p>
-                <p style="font-size: 1.4rem; margin: 1rem 0;"><strong>$8,000</strong> | 3-4 Months</p>
-                <button style="width: 100%; background: #007bff; color: #ffffff; border: none; padding: 1rem; border-radius: 10px; font-weight: bold; cursor: pointer;">Get Quote</button>
-            </div>
-            
-            <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; border: 1px solid rgba(0,123,255,0.2);">
-                <h3 style="color: #007bff; font-size: 1.5rem; margin-bottom: 1rem;">Cloud Solutions</h3>
-                <p><strong>AWS | Azure | DevOps | Scalable Apps</strong></p>
-                <p style="font-size: 1.4rem; margin: 1rem 0;"><strong>$10,000</strong> | 4-6 Months</p>
-                <button style="width: 100%; background: #007bff; color: #ffffff; border: none; padding: 1rem; border-radius: 10px; font-weight: bold; cursor: pointer;">Get Quote</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- New Team Section -->
-    <section id="team">
-        <h2>Meet Our Team</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
-            <div style="text-align: center; background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border: 1px solid rgba(0,123,255,0.2);">
-                <h3 style="color: #007bff;">John Doe</h3>
-                <p>Lead Developer</p>
-                <p>Expert in React and Node.js with 10+ years experience.</p>
+        <!-- Team Section -->
+        <section id="team" class="team-section">
+            <h2>👥 Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2300ffff'/><text x='50%' y='55%' font-size='12' fill='%23000' text-anchor='middle'>JD</text></svg>" alt="John Doe" />
+                    <h3>John Doe</h3>
+                    <p>Lead Developer</p>
+                    <p>Expert in React and Node.js with 10+ years experience.</p>
+                </div>
+                <div class="team-member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2300ffff'/><text x='50%' y='55%' font-size='12' fill='%23000' text-anchor='middle'>JS</text></svg>" alt="Jane Smith" />
+                    <h3>Jane Smith</h3>
+                    <p>UI/UX Designer</p>
+                    <p>Creating intuitive designs for web and mobile apps.</p>
+                </div>
+                <div class="team-member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2300ffff'/><text x='50%' y='55%' font-size='12' fill='%23000' text-anchor='middle'>MJ</text></svg>" alt="Mike Johnson" />
+                    <h3>Mike Johnson</h3>
+                    <p>Project Manager</p>
+                    <p>Ensuring timely delivery and client satisfaction.</p>
+                </div>
             </div>
-            <div style="text-align: center; background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border: 1px solid rgba(0,123,255,0.2);">
-                <h3 style="color: #007bff;">Jane Smith</h3>
-                <p>UI/UX Designer</p>
-                <p>Creating intuitive designs for web and mobile apps.</p>
-            </div>
-            <div style="text-align: center; background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border: 1px solid rgba(0,123,255,0.2);">
-                <h3 style="color: #007bff;">Mike Johnson</h3>
-                <p>Project Manager</p>
-                <p>Ensuring timely delivery and client satisfaction.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Stats Section -->
-    <section style="background: rgba(0,123,255,0.1); border: 2px solid rgba(0,123,255,0.3);">
-        <h2 style="text-align: center;">Our Achievements</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin: 2rem 0;">
-            <div style="text-align: center;">
-                <div style="font-size: 3.5rem; color: #007bff; font-weight: bold;">1000+</div>
-                <p>Projects Completed</p>
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <h2>📊 Our Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99%</div>
+                    <p>Satisfaction Rate</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <p>Years Experience</p>
+                </div>
             </div>
-            <div style="text-align: center;">
-                <div style="font-size: 3.5rem; color: #007bff; font-weight: bold;">500+</div>
-                <p>Happy Clients</p>
-            </div>
-            <div style="text-align: center;">
-                <div style="font-size: 3.5rem; color: #007bff; font-weight: bold;">99%</div>
-                <p>Satisfaction Rate</p>
-            </div>
-            <div style="text-align: center;">
-                <div style="font-size: 3.5rem; color: #007bff; font-weight: bold;">15+</div>
-                <p>Years Experience</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials">
-        <h2>What Clients Say</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
-            <blockquote style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #007bff;">
-                <p>"TechNova transformed our business with a seamless web app. <strong>Highly recommended!</strong>"</p>
-                <cite>— Sarah L., CEO of StartupX</cite>
-            </blockquote>
-            <blockquote style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #007bff;">
-                <p>"Outstanding mobile app development. Delivered on time and exceeded expectations."</p>
-                <cite>— David R., Product Manager</cite>
-            </blockquote>
-            <blockquote style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border-left: 4px solid #007bff;">
-                <p>"Their cloud solutions scaled our operations perfectly. <strong>Top-notch team!</strong>"</p>
-                <cite>— Emily T., CTO</cite>
-            </blockquote>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Start Your Project Today</h2>
-        <p><strong>Free consultation available!</strong> Let's discuss your ideas.</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0; align-items: start;">
-            <div>
-                <h3 style="color: #007bff; margin-bottom: 1rem;">📞 Contact Info</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 1rem;">📧 info@technovasolutions.com</li>
-                    <li style="margin-bottom: 1rem;">📞 +1 234 567 8901</li>
-                    <li style="margin-bottom: 1rem;">📍 New York, NY</li>
-                    <li>⏰ Mon-Fri: 9 AM - 6 PM</li>
-                </ul>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <h2>💬 What Clients Say</h2>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <p>"TechNova transformed our business with a seamless web app. <strong>Highly recommended!</strong>"</p>
+                    <cite>— Sarah L., CEO of StartupX</cite>
+                </article>
+                <article class="testimonial-card">
+                    <p>"Outstanding mobile app development. Delivered on time and exceeded expectations."</p>
+                    <cite>— David R., Product Manager</cite>
+                </article>
+                <article class="testimonial-card">
+                    <p>"Their cloud solutions scaled our operations perfectly. <strong>Top-notch team!</strong>"</p>
+                    <cite>— Emily T., CTO</cite>
+                </article>
             </div>
-            <form style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border: 1px solid rgba(0,123,255,0.2);">
-                <input type="text" placeholder="Full Name *" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid rgba(0,123,255,0.3); border-radius: 8px; background: rgba(255,255,255,0.05); color: #ffffff;">
-                <input type="tel" placeholder="Phone Number *" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid rgba(0,123,255,0.3); border-radius: 8px; background: rgba(255,255,255,0.05); color: #ffffff;">
-                <input type="email" placeholder="Email Address *" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid rgba(0,123,255,0.3); border-radius: 8px; background: rgba(255,255,255,0.05); color: #ffffff;">
-                <select style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid rgba(0,123,255,0.3); border-radius: 8px; background: rgba(255,255,255,0.05); color: #ffffff;">
-                    <option>Select Service</option>
-                    <option>Web Development</option>
-                    <option>Mobile Apps</option>
-                    <option>Cloud Solutions</option>
-                </select>
-                <button type="submit" style="width: 100%; background: linear-gradient(45deg, #007bff, #66b3ff); color: #ffffff; border: none; padding: 1.2rem; border-radius: 10px; font-weight: bold; font-size: 1.1rem; cursor: pointer;">🚀 GET FREE CONSULTATION</button>
-            </form>
-        </div>
-    </section>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>🚀 Start Your Project Today</h2>
+            <p><strong>Free consultation available!</strong> Let's discuss your ideas.</p>
+            <div class="contact-layout">
+                <aside class="contact-info">
+                    <h3>📞 Contact Info</h3>
+                    <ul>
+                        <li>📧 info@technovasolutions.com</li>
+                        <li>📞 +1 234 567 8901</li>
+                        <li>📍 New York, NY</li>
+                        <li>⏰ Mon-Fri: 9 AM - 6 PM</li>
+                    </ul>
+                </aside>
+                <form class="contact-form">
+                    <input type="text" placeholder="Full Name *" required>
+                    <input type="tel" placeholder="Phone Number *" required>
+                    <input type="email" placeholder="Email Address *" required>
+                    <select required>
+                        <option>Select Service</option>
+                        <option>Web Development</option>
+                        <option>Mobile Apps</option>
+                        <option>Cloud Solutions</option>
+                    </select>
+                    <button type="submit">🚀 GET FREE CONSULTATION</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 TechNova Solutions. All rights reserved.</p>
-            <ul>
-                <li><a href="#privacy">Privacy</a></li>
-                <li><a href="#terms">Terms</a></li>
-            </ul>
+            <div class="footer-content">
+                <p>&copy; 2026 TechNova Solutions. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                </ul>
+                <div class="newsletter">
+                    <h3>Subscribe to Updates</h3>
+                    <input type="email" placeholder="Your Email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
         </div>
     </footer>
 
