@@ -350,25 +350,40 @@ footer {
 
 @media (max-width: 768px) {
 
-  .nav-menu ul {
-    position: absolute;
-    top: 100%;           /* 👈 BELOW HEADER */
-    left: 0;
-    width: 100%;
-    background: rgba(10, 10, 10, 0.98);
-
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-
-    padding: 1.5rem 0;
-
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease;
+  .hamburger {
+    display: flex;
   }
 
+  /* FULLY HIDDEN BY DEFAULT */
+  .nav-menu ul {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.98);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: transform 0.4s ease, opacity 0.3s ease;
+    z-index: 999;
+  }
+
+  /* ONLY SHOW WHEN ACTIVE */
   .nav-menu.active ul {
-    max-height: 300px;   /* enough for links */
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-menu a {
+    font-size: 1.4rem;
   }
 }
