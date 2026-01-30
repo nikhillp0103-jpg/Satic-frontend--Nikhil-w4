@@ -634,7 +634,20 @@ footer a:hover {
         gap: 1rem;
     }
 }
+.newsletter {
+    flex-direction: column !important;
+    gap: 16px;
+    align-items: stretch;
+}
 
+.newsletter input {
+    width: 100% !important;
+    max-width: none;
+}
+
+.newsletter button {
+    width: 100% !important;
+}
 /* SMALL PHONE */
 @media (max-width: 480px) {
     .container {
