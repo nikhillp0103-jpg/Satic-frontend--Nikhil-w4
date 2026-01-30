@@ -189,5 +189,5 @@ nav.scrolled { padding: 0.5rem 0; }
 
 .scroll-top.show { display: flex; }
 
-.scroll-top:hover { background: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 102, 255, 0.4); } Exit code: 0
+.scroll-top:hover { background: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 102, 255, 0.4); } 
 
