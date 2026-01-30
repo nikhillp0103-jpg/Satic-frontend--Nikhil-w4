@@ -226,6 +226,7 @@ header h1 {
     margin: 0 auto 2rem;
 }
 
+
 /* About Section */
 .features {
     display: grid;
@@ -536,7 +537,7 @@ footer a:hover {
     background: linear-gradient(45deg, #ff5722, #e64a19);
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem; /* Increased padding for larger size */
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
