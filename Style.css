@@ -309,7 +309,21 @@ header h1 {
     color: #ff5722;
     font-weight: 600;
 }
+.services-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 40px;
+}
 
+.services-image img {
+    width: 100%;
+    max-width: 480px;   /* perfect size for mobile */
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
 /* Team Section */
 .team {
     display: grid;
