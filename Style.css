@@ -313,16 +313,18 @@ header h1 {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 25px 0 40px;
+    margin: 20px 0 30px;
+    overflow: hidden;
 }
 
 .services-image img {
     width: 100%;
-    max-width: 480px;   /* perfect size for mobile */
+    max-width: 420px;      /* keeps it compact */
+    max-height: 220px;     /* 🔥 FIXES THE TALL IMAGE */
     height: auto;
-    border-radius: 16px;
-    object-fit: cover;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    object-fit: cover;    /* crops nicely */
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 /* Team Section */
 .team {
